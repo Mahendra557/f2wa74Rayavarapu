@@ -3,10 +3,10 @@ var express = require('express');
 var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    var n1 = Math.random() *15
-    var n2 = Math.random() *15
-    var n3 = Math.random() *15
-    var n4 = Math.random() *15
+    var n1 = Math.floor(Math.random() *15)
+    var n2 = Math.floor(Math.random() *15)
+    var n3 = Math.floor(Math.random() *15)
+    var n4 = Math.floor(Math.random() *15)
     var pow = Math.pow(n1,2);
     var sgn = Math.sign(n2);
     var tnh = Math.tanh(n3);
